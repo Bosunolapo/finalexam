@@ -36,4 +36,4 @@ jobs:
                   sudo usermod -a -G docker ec2-user
                   docker build -t olaimage .
                   docker pull olaimage:latest
-                  docker run -d -p 80:80 --name olaexamcontainer olaimage:latest
+                  docker run -d -p 8080:80 --name olaexamcontainer olaimage:latest
